@@ -20,6 +20,7 @@ Kirchhoff's Current Law (KCL) Kirchhoff's Current Law states that the algebraic 
 
 
 PROCEDURE:
+
 a.   KVL:
 1.   Connect as per the circuit diagram.
 2.   Check if the RPS voltage is set to zero voltage.
@@ -38,26 +39,149 @@ b.  KCL:
 5.   Set the input voltage to a value between 0V to 30V.
 6.   Record the voltage values shown in the ammeter connected to each resistor.
 7.   Take readings for different values of input voltage and tabulate them. 
+
 CIRCUIT DIAGRAM:
+
+$$V=V_{30\Omega}+V_{50\Omega}+V_{100\Omega}$$
 
 CIRCUIT DIAGRAM:
 
 
 a.   KVL:
+<img width="1190" height="623" alt="Screenshot 2025-11-12 091921" src="https://github.com/user-attachments/assets/b636eb9b-da4f-45f7-9f18-ccfcc68ae2b6" />
+
  
 
 
 b.  KCL:
+<img width="1334" height="614" alt="Screenshot 2025-11-12 094305" src="https://github.com/user-attachments/assets/ad061684-0b37-4c05-9458-5a3da6cb5153" />
+
  
 
 Calculation:
 
 a.   KVL:
+
+$$
+V = V_1 + V_2 + V_3
+$$
+
+$$
+100 = IR_1 + IR_2 + IR_3
+$$
+
+$$
+R_{eq} = R_1 + R_2 + R_3
+$$
+
+$$
+R_{eq} = 180\Omega
+$$
+
+$$
+I = \frac{V}{R_{eq}} = \frac{100}{180} = 0.556\\text{A}
+$$
+
+$$
+V_1 = V_{30\Omega} = IR_1 = 0.556 \times 30 = 16.68\\text{V}
+$$
+
+$$
+V_2 = V_{50\Omega} = IR_2 = 0.556 \times 50 = 27.8\\text{V}
+$$
+
+$$
+V_3 = V_{100\Omega} = IR_3 = 0.556 \times 100 = 55.6\\text{V}
+$$
+
  
 
 
 b.  KCL:
 
+$$
+i_{30\Omega} = I_{50\Omega} + I_{100\Omega}
+$$
+
+$$
+i_{30\Omega} = \frac{100 - V}{30}
+$$
+
+$$
+I_{50\Omega} = \frac{V}{50}
+$$
+
+$$
+I_{100\Omega} = \frac{V}{100}
+$$
+
+$$
+\frac{100 - V}{30} = \frac{V}{50} + \frac{V}{100}
+$$
+
+$$
+\frac{100 - V}{30} = \frac{2V}{100} + \frac{V}{100}
+$$
+
+$$
+\frac{100 - V}{30} = \frac{3V}{100}
+$$
+
+$$
+\frac{100 - V}{3} = \frac{3V}{10}
+$$
+
+$$
+1000 - 10V = 9V
+$$
+
+$$
+19V = 1000
+$$
+
+$$
+I_{100\Omega} = \frac{V}{50}
+$$
+
+$$
+\frac{100 - V}{30} = \frac{V}{50} + \frac{V}{100}
+$$
+
+$$
+\frac{100 - V}{30} = \frac{2V}{100} + \frac{V}{100}
+$$
+
+$$
+\frac{100 - V}{30} = \frac{3V}{100}
+$$
+
+$$
+\frac{100 - V}{3} = \frac{3V}{10}
+$$
+
+$$
+1000 - 10V = 9V
+$$
+
+$$
+19V = 1000
+$$
+
+$$
+V = \frac{1000}{19} = 52.63V
+$$
+
+$$
+i_{30\Omega} = \frac{100 - V}{30} = \frac{100 - 52.63}{30} = 1.58A
+$$
+
+$$
+I_{50\Omega} = \frac{V}{50} = \frac{52.63}{50} = 1.05A
+$$
+
+$$
+I_{100\Omega} = \frac{V}{100} = \frac{52.63}{100} = 0.53A
+$$
 
 
 
@@ -65,10 +189,17 @@ Tabulation:
 
 a.   KVL:
  
-
+|KVL|Source(V)|$$V_{30\Omega}$$|$$V_{50\Omega}$$|$$V_{100\Omega}$$|$$V_{30\Omega}+V_{50\Omega}+V_{100\Omega}$$|
+ |:-----:|:-----:|:------------:|:--------------:|:---------------:|:-----------------------------------------:|
+ |Theoretical|100|16.68V|27.8V|55.6V|100.05V|
+ |partical|100|16.7V|27.8V|55.6V|100.1V|
 
 b.  KCL:
 
+|KCL|$$I_{30\Omega}$$|$$I_{50\Omega}$$|$$I_{100\Omega}$$|$$V_A$$|
+|:-----:|:------------:|:--------------:|:---------------:|:------:|
+|Theoretical|1.58A|1.05A|0.53A|52.63V|
+|partical|1.58A|1.05A|0.53A|52.6V|
 
 
 RESULT:
